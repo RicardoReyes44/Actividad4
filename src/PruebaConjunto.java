@@ -56,6 +56,7 @@ public class PruebaConjunto {
 			System.out.println("1.-Union");
 			System.out.println("2.-Interseccion");
 			System.out.println("3.-Diferencia");
+			System.out.println("4.-Ver datos");
 			System.out.print("Ingresa opcion: ");
 			
 			try {
@@ -63,10 +64,16 @@ public class PruebaConjunto {
 				
 				switch(opcion) {
 				case 1:
+					System.out.println(c.union());
 					break;
 				case 2:
+					c.interseccion();
 					break;
 				case 3:
+					c.diferencia();
+					break;
+				case 4:
+					System.out.println(c);
 					break;
 				default:
 					System.out.println("No existe esa opcion, por favor prueba de nuevo");
